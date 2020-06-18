@@ -80,6 +80,7 @@ namespace FTP_ejemplo
                 backgroundWorker1.ReportProgress((int)porcentaje);
 
             } while (byteLectura != 0);
+            MessageBox.Show("envio exitoso!");
             envioArchivo.Close();
             ftpStream.Close();
         }
